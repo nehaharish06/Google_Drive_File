@@ -8,16 +8,14 @@ from validator import validate_record
 
 def download_file(url: str, output_path=None):
     output_path = output_path or DEFAULT_OUTPUT_PATH
+
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            logger.info(f"Attempt {attempt} downloading file...")
+            logger.info(f"Attempt {attempt} downloading CSV file...")
             response = requests.get(url, timeout=10)
             response.raise_for_status()
 
-            content_type = response.headers.get("Content-Type", "")
-            ext = "csv" if "csv" in content_type else "xlsx"
-
-            file_path = f"{output_path}.{ext}"
+            file_path = f"{output_path}.csv"
             with open(file_path, "wb") as f:
                 f.write(response.content)
 
@@ -26,22 +24,43 @@ def download_file(url: str, output_path=None):
 
         except Exception as e:
             logger.error(f"Download failed: {e}")
-            if attempt < MAX_RETRIES:
-                logger.info(f"Retrying in {RETRY_DELAY} seconds...")
-                time.sleep(RETRY_DELAY)
-            else:
-                raise Exception("File download failed after retries")
+            time.sleep(RETRY_DELAY)
+
+    raise Exception("CSV download failed after retries")
+
 
 def parse_file(file_path: str) -> pd.DataFrame:
     ext = file_path.split(".")[-1].lower()
 
-    if ext not in SUPPORTED_FORMATS:
-        raise ValueError(f"Unsupported file format: {ext}")
-
     if ext == "csv":
-        return pd.read_csv(file_path)
+        df = pd.read_csv(file_path)
     else:
-        return pd.read_excel(file_path)
+        df = pd.read_excel(file_path)
+
+    # Normalize columns
+    df.columns = (
+        df.columns
+        .str.strip()
+        .str.lower()
+        .str.replace(" ", "_")
+    )
+
+    COLUMN_MAPPING = {
+        "user_id": "Employee ID",
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "email": "Email",
+        "phone": "Phone Number",
+        "date_of_birth": "Hire Date",
+        "job_title": "Job Title",
+    }
+
+    df.rename(columns=COLUMN_MAPPING, inplace=True)
+
+    logger.info(f"CSV Columns after mapping: {list(df.columns)}")
+    return df
+
+
 
 def process_employee_data(df: pd.DataFrame):
     valid_records = []
@@ -58,8 +77,19 @@ def process_employee_data(df: pd.DataFrame):
 
     logger.info(f"Valid records: {len(valid_records)}")
     logger.info(f"Invalid records: {len(invalid_records)}")
+    logger.info(f"CSV Columns: {list(df.columns)}")
+
 
     return valid_records, invalid_records
+
+def normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
+    df.columns = (
+        df.columns
+        .str.strip()
+        .str.lower()
+        .str.replace(" ", "_")
+    )
+    return df
 
 
 if __name__ == "__main__":
@@ -68,6 +98,7 @@ if __name__ == "__main__":
     try:
         file_path = download_file(URL)
         df = parse_file(file_path)
+        df = normalize_columns(df)
         valid, invalid = process_employee_data(df)
 
         logger.info("Sample valid records:")

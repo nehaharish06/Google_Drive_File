@@ -37,3 +37,89 @@
 2026-01-10 17:58:18,129 - INFO - Download successful: employee_data.csv
 2026-01-10 17:58:52,734 - INFO - Attempt 1 downloading file...
 2026-01-10 17:58:52,735 - INFO - Download successful: employee_data.csv
+2026-01-10 19:09:28,008 - INFO - Attempt 1 downloading file...
+2026-01-10 19:09:28,017 - INFO - Download successful: employee_data.csv
+2026-01-10 19:09:39,692 - INFO - Attempt 1 downloading file...
+2026-01-10 19:09:42,060 - INFO - Download successful: employee_data.xlsx
+2026-01-10 19:09:42,098 - CRITICAL - Scraper failed: Excel file format cannot be determined, you must specify an engine manually.
+2026-01-10 19:11:22,660 - INFO - Attempt 1 downloading file...
+2026-01-10 19:11:24,885 - INFO - Download successful: employee_data.xlsx
+2026-01-10 19:11:25,471 - WARNING - File is not valid Excel. Trying CSV fallback...
+2026-01-10 19:11:25,709 - INFO - CSV detected and converted to Excel successfully
+2026-01-10 19:11:25,775 - INFO - Valid records: 0
+2026-01-10 19:11:25,775 - INFO - Invalid records: 1000
+2026-01-10 19:11:25,776 - INFO - Sample valid records:
+2026-01-10 19:11:57,564 - INFO - Attempt 1 downloading file...
+2026-01-10 19:11:59,631 - INFO - Download successful: employee_data.xlsx
+2026-01-10 19:11:59,894 - WARNING - File is not valid Excel. Trying CSV fallback...
+2026-01-10 19:12:00,119 - INFO - CSV detected and converted to Excel successfully
+2026-01-10 19:12:00,178 - INFO - Valid records: 0
+2026-01-10 19:12:00,178 - INFO - Invalid records: 1000
+2026-01-10 19:12:00,179 - INFO - Sample valid records:
+2026-01-10 19:12:23,274 - INFO - Attempt 1 downloading file...
+2026-01-10 19:12:25,215 - INFO - Download successful: employee_data.xlsx
+2026-01-10 19:12:25,243 - CRITICAL - Scraper failed: Excel file format cannot be determined, you must specify an engine manually.
+2026-01-10 19:13:34,911 - INFO - Attempt 1 downloading file...
+2026-01-10 19:13:36,935 - INFO - Download successful: employee_data.xlsx
+2026-01-10 19:13:36,980 - CRITICAL - Scraper failed: Excel file format cannot be determined, you must specify an engine manually.
+2026-01-10 19:17:15,766 - INFO - Attempt 1 downloading file...
+2026-01-10 19:17:15,767 - INFO - Download successful: employee_data.csv
+2026-01-10 19:17:27,805 - INFO - Attempt 1 downloading file...
+2026-01-10 19:17:30,224 - INFO - Download successful: employee_data.xlsx
+2026-01-10 19:17:30,249 - CRITICAL - Scraper failed: Excel file format cannot be determined, you must specify an engine manually.
+2026-01-10 19:30:30,210 - INFO - Attempt 1 downloading CSV file...
+2026-01-10 19:30:30,222 - INFO - Download successful: employee_data.csv
+2026-01-10 19:30:33,736 - INFO - Attempt 1 downloading CSV file...
+2026-01-10 19:30:36,034 - INFO - Download successful: employee_data.csv
+2026-01-10 19:30:36,145 - INFO - Valid records: 0
+2026-01-10 19:30:36,145 - INFO - Invalid records: 1000
+2026-01-10 19:30:36,146 - INFO - Sample valid records:
+2026-01-10 19:36:11,761 - INFO - Attempt 1 downloading CSV file...
+2026-01-10 19:36:13,984 - INFO - Download successful: employee_data.csv
+2026-01-10 19:36:14,097 - INFO - Valid records: 0
+2026-01-10 19:36:14,098 - INFO - Invalid records: 1000
+2026-01-10 19:36:14,098 - INFO - CSV Columns: ['index', 'user_id', 'first_name', 'last_name', 'sex', 'email', 'phone', 'date_of_birth', 'job_title']
+2026-01-10 19:36:14,098 - INFO - Sample valid records:
+2026-01-10 19:37:25,353 - INFO - Attempt 1 downloading CSV file...
+2026-01-10 19:37:27,279 - INFO - Download successful: employee_data.csv
+2026-01-10 19:37:27,359 - INFO - Valid records: 0
+2026-01-10 19:37:27,359 - INFO - Invalid records: 1000
+2026-01-10 19:37:27,360 - INFO - CSV Columns: ['index', 'user_id', 'first_name', 'last_name', 'sex', 'email', 'phone', 'date_of_birth', 'job_title']
+2026-01-10 19:37:27,360 - INFO - Sample valid records:
+2026-01-10 19:39:46,431 - INFO - Attempt 1 downloading CSV file...
+2026-01-10 19:39:48,918 - INFO - Download successful: employee_data.csv
+2026-01-10 19:39:48,962 - INFO - CSV Columns after mapping: ['Index', 'User Id', 'First Name', 'Last Name', 'Sex', 'Email', 'Phone', 'Date of birth', 'Job Title']
+2026-01-10 19:39:49,028 - INFO - Valid records: 0
+2026-01-10 19:39:49,029 - INFO - Invalid records: 1000
+2026-01-10 19:39:49,029 - INFO - CSV Columns: ['index', 'user_id', 'first_name', 'last_name', 'sex', 'email', 'phone', 'date_of_birth', 'job_title']
+2026-01-10 19:39:49,029 - INFO - Sample valid records:
+2026-01-10 19:41:32,754 - INFO - Attempt 1 downloading CSV file...
+2026-01-10 19:41:32,755 - INFO - Download successful: employee_data.csv
+2026-01-10 19:41:32,773 - INFO - CSV Columns after mapping: ['employee_id', 'First Name', 'Last Name', 'Email', 'hire_date']
+2026-01-10 19:41:49,846 - INFO - Attempt 1 downloading CSV file...
+2026-01-10 19:41:51,997 - INFO - Download successful: employee_data.csv
+2026-01-10 19:41:52,044 - INFO - CSV Columns after mapping: ['index', 'Employee ID', 'First Name', 'Last Name', 'sex', 'Email', 'Phone Number', 'Hire Date', 'Job Title']
+2026-01-10 19:41:52,102 - INFO - Valid records: 1000
+2026-01-10 19:41:52,103 - INFO - Invalid records: 0
+2026-01-10 19:41:52,103 - INFO - CSV Columns: ['index', 'employee_id', 'first_name', 'last_name', 'sex', 'email', 'phone_number', 'hire_date', 'job_title']
+2026-01-10 19:41:52,103 - INFO - Sample valid records:
+2026-01-10 19:41:52,104 - INFO - {'index': 1, 'employee_id': '8717bbf45cCDbEe', 'first_name': 'Shelia', 'last_name': 'Mahoney', 'sex': 'Male', 'email': 'pwarner@example.org', 'phone_number': '857.139.8239', 'hire_date': '2014-01-27', 'job_title': 'Probation officer'}
+2026-01-10 19:41:52,104 - INFO - {'index': 2, 'employee_id': '3d5AD30A4cD38ed', 'first_name': 'Jo', 'last_name': 'Rivers', 'sex': 'Female', 'email': 'fergusonkatherine@example.net', 'phone_number': '+1-950-759-8687', 'hire_date': '1931-07-26', 'job_title': 'Dancer'}
+2026-01-10 19:41:52,104 - INFO - {'index': 3, 'employee_id': '810Ce0F276Badec', 'first_name': 'Sheryl', 'last_name': 'Lowery', 'sex': 'Female', 'email': 'fhoward@example.org', 'phone_number': '(599)782-0605', 'hire_date': '2013-11-25', 'job_title': 'Copy'}
+2026-01-10 19:41:52,104 - INFO - {'index': 4, 'employee_id': 'BF2a889C00f0cE1', 'first_name': 'Whitney', 'last_name': 'Hooper', 'sex': 'Male', 'email': 'zjohnston@example.com', 'phone_number': '+1-939-130-6258', 'hire_date': '2012-11-17', 'job_title': 'Counselling psychologist'}
+2026-01-10 19:41:52,104 - INFO - {'index': 5, 'employee_id': '9afFEafAe1CBBB9', 'first_name': 'Lindsey', 'last_name': 'Rice', 'sex': 'Female', 'email': 'elin@example.net', 'phone_number': '(390)417-1635x3010', 'hire_date': '1923-04-15', 'job_title': 'Biomedical engineer'}
+2026-01-10 19:43:08,072 - INFO - Attempt 1 downloading CSV file...
+2026-01-10 19:43:08,073 - INFO - Download successful: employee_data.csv
+2026-01-10 19:43:08,094 - INFO - CSV Columns after mapping: ['employee_id', 'First Name', 'Last Name', 'Email', 'hire_date']
+2026-01-10 19:43:25,443 - INFO - Attempt 1 downloading CSV file...
+2026-01-10 19:43:27,801 - INFO - Download successful: employee_data.csv
+2026-01-10 19:43:27,832 - INFO - CSV Columns after mapping: ['index', 'Employee ID', 'First Name', 'Last Name', 'sex', 'Email', 'Phone Number', 'Hire Date', 'Job Title']
+2026-01-10 19:43:27,896 - INFO - Valid records: 1000
+2026-01-10 19:43:27,896 - INFO - Invalid records: 0
+2026-01-10 19:43:27,896 - INFO - CSV Columns: ['index', 'employee_id', 'first_name', 'last_name', 'sex', 'email', 'phone_number', 'hire_date', 'job_title']
+2026-01-10 19:43:27,897 - INFO - Sample valid records:
+2026-01-10 19:43:27,897 - INFO - {'index': 1, 'employee_id': '8717bbf45cCDbEe', 'first_name': 'Shelia', 'last_name': 'Mahoney', 'sex': 'Male', 'email': 'pwarner@example.org', 'phone_number': '857.139.8239', 'hire_date': '2014-01-27', 'job_title': 'Probation officer'}
+2026-01-10 19:43:27,898 - INFO - {'index': 2, 'employee_id': '3d5AD30A4cD38ed', 'first_name': 'Jo', 'last_name': 'Rivers', 'sex': 'Female', 'email': 'fergusonkatherine@example.net', 'phone_number': '+1-950-759-8687', 'hire_date': '1931-07-26', 'job_title': 'Dancer'}
+2026-01-10 19:43:27,898 - INFO - {'index': 3, 'employee_id': '810Ce0F276Badec', 'first_name': 'Sheryl', 'last_name': 'Lowery', 'sex': 'Female', 'email': 'fhoward@example.org', 'phone_number': '(599)782-0605', 'hire_date': '2013-11-25', 'job_title': 'Copy'}
+2026-01-10 19:43:27,898 - INFO - {'index': 4, 'employee_id': 'BF2a889C00f0cE1', 'first_name': 'Whitney', 'last_name': 'Hooper', 'sex': 'Male', 'email': 'zjohnston@example.com', 'phone_number': '+1-939-130-6258', 'hire_date': '2012-11-17', 'job_title': 'Counselling psychologist'}
+2026-01-10 19:43:27,898 - INFO - {'index': 5, 'employee_id': '9afFEafAe1CBBB9', 'first_name': 'Lindsey', 'last_name': 'Rice', 'sex': 'Female', 'email': 'elin@example.net', 'phone_number': '(390)417-1635x3010', 'hire_date': '1923-04-15', 'job_title': 'Biomedical engineer'}
