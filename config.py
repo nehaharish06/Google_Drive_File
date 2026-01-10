@@ -1,3 +1,7 @@
-GOOGLE_DRIVE_URL = "https://drive.google.com/uc?id=1AWPf-pJodJKeHsARQK_RHiNsE8fjPCVK&export=download"
+# config.py
+from pathlib import Path
+
 MAX_RETRIES = 3
+RETRY_DELAY = 2  # seconds between retries
 SUPPORTED_FORMATS = ["csv", "xlsx"]
+DEFAULT_OUTPUT_PATH = Path("employee_data")

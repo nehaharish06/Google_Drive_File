@@ -1,0 +1,39 @@
+2026-01-10 17:11:15,029 - INFO - Attempt 1: Downloading file from https://drive.google.com/uc?id=1AWPf-pJodJKeHsARQK_RHiNsE8fjPCVK&export=download
+2026-01-10 17:11:17,181 - INFO - File downloaded successfully: employee_data.csv
+2026-01-10 17:11:17,224 - INFO - Parsed 1000 employees from CSV
+2026-01-10 17:11:17,225 - INFO - Sample data:
+2026-01-10 17:11:17,225 - INFO - {'Employee ID': '', 'First Name': 'Shelia', 'Last Name': 'Mahoney', 'Email': 'pwarner@example.org', 'Job Title': 'Probation officer', 'Phone Number': '', 'Hire Date': ''}
+2026-01-10 17:11:17,225 - INFO - {'Employee ID': '', 'First Name': 'Jo', 'Last Name': 'Rivers', 'Email': 'fergusonkatherine@example.net', 'Job Title': 'Dancer', 'Phone Number': '', 'Hire Date': ''}
+2026-01-10 17:11:17,226 - INFO - {'Employee ID': '', 'First Name': 'Sheryl', 'Last Name': 'Lowery', 'Email': 'fhoward@example.org', 'Job Title': 'Copy', 'Phone Number': '', 'Hire Date': ''}
+2026-01-10 17:11:17,227 - INFO - {'Employee ID': '', 'First Name': 'Whitney', 'Last Name': 'Hooper', 'Email': 'zjohnston@example.com', 'Job Title': 'Counselling psychologist', 'Phone Number': '', 'Hire Date': ''}
+2026-01-10 17:11:17,227 - INFO - {'Employee ID': '', 'First Name': 'Lindsey', 'Last Name': 'Rice', 'Email': 'elin@example.net', 'Job Title': 'Biomedical engineer', 'Phone Number': '', 'Hire Date': ''}
+2026-01-10 17:23:07,545 - INFO - Attempt 1: Downloading file from https://drive.google.com/uc?id=1AWPf-pJodJKeHsARQK_RHiNsE8fjPCVK&export=download
+2026-01-10 17:23:09,965 - INFO - File downloaded successfully: employee_data.csv
+2026-01-10 17:23:09,987 - INFO - Parsed 1000 employees from CSV
+2026-01-10 17:23:09,987 - INFO - Sample data:
+2026-01-10 17:23:09,988 - INFO - {'Employee ID': '', 'First Name': 'Shelia', 'Last Name': 'Mahoney', 'Email': 'pwarner@example.org', 'Job Title': 'Probation officer', 'Phone Number': '', 'Hire Date': ''}
+2026-01-10 17:23:09,988 - INFO - {'Employee ID': '', 'First Name': 'Jo', 'Last Name': 'Rivers', 'Email': 'fergusonkatherine@example.net', 'Job Title': 'Dancer', 'Phone Number': '', 'Hire Date': ''}
+2026-01-10 17:23:09,988 - INFO - {'Employee ID': '', 'First Name': 'Sheryl', 'Last Name': 'Lowery', 'Email': 'fhoward@example.org', 'Job Title': 'Copy', 'Phone Number': '', 'Hire Date': ''}
+2026-01-10 17:23:09,988 - INFO - {'Employee ID': '', 'First Name': 'Whitney', 'Last Name': 'Hooper', 'Email': 'zjohnston@example.com', 'Job Title': 'Counselling psychologist', 'Phone Number': '', 'Hire Date': ''}
+2026-01-10 17:23:09,988 - INFO - {'Employee ID': '', 'First Name': 'Lindsey', 'Last Name': 'Rice', 'Email': 'elin@example.net', 'Job Title': 'Biomedical engineer', 'Phone Number': '', 'Hire Date': ''}
+2026-01-10 17:26:43,255 - INFO - Attempt 1 downloading file...
+2026-01-10 17:26:43,256 - INFO - Download successful: employee_data.csv
+2026-01-10 17:26:46,395 - INFO - Attempt 1 downloading file...
+2026-01-10 17:26:48,487 - INFO - Download successful: employee_data.xlsx
+2026-01-10 17:26:48,528 - CRITICAL - Scraper failed: Excel file format cannot be determined, you must specify an engine manually.
+2026-01-10 17:27:26,919 - INFO - Attempt 1 downloading file...
+2026-01-10 17:27:26,933 - INFO - Download successful: employee_data.csv
+2026-01-10 17:27:36,357 - INFO - Attempt 1 downloading file...
+2026-01-10 17:27:38,733 - INFO - Download successful: employee_data.xlsx
+2026-01-10 17:27:38,748 - CRITICAL - Scraper failed: Excel file format cannot be determined, you must specify an engine manually.
+2026-01-10 17:28:52,348 - INFO - Attempt 1 downloading file...
+2026-01-10 17:28:54,793 - INFO - Download successful: employee_data.xlsx
+2026-01-10 17:28:54,809 - CRITICAL - Scraper failed: Excel file format cannot be determined, you must specify an engine manually.
+2026-01-10 17:56:07,672 - INFO - Attempt 1 downloading file...
+2026-01-10 17:56:07,681 - INFO - Download successful: employee_data.csv
+2026-01-10 17:57:35,177 - INFO - Attempt 1 downloading file...
+2026-01-10 17:57:35,178 - INFO - Download successful: employee_data.csv
+2026-01-10 17:58:18,128 - INFO - Attempt 1 downloading file...
+2026-01-10 17:58:18,129 - INFO - Download successful: employee_data.csv
+2026-01-10 17:58:52,734 - INFO - Attempt 1 downloading file...
+2026-01-10 17:58:52,735 - INFO - Download successful: employee_data.csv
