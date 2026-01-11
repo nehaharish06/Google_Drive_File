@@ -18,13 +18,13 @@ def test_file_download_success(mock_get):
 
     file_path = download_file("fake_url")
 
-    # ✅ File exists
+    # File exists
     assert os.path.exists(file_path)
 
-    # ✅ Correct extension
+    #  Correct extension
     assert file_path.endswith(".csv")
 
-    # ✅ Entire content downloaded
+    #  Entire content downloaded
     with open(file_path, "rb") as f:
         content = f.read()
 
