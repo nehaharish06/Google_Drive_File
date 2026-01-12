@@ -123,3 +123,45 @@
 2026-01-10 19:43:27,898 - INFO - {'index': 3, 'employee_id': '810Ce0F276Badec', 'first_name': 'Sheryl', 'last_name': 'Lowery', 'sex': 'Female', 'email': 'fhoward@example.org', 'phone_number': '(599)782-0605', 'hire_date': '2013-11-25', 'job_title': 'Copy'}
 2026-01-10 19:43:27,898 - INFO - {'index': 4, 'employee_id': 'BF2a889C00f0cE1', 'first_name': 'Whitney', 'last_name': 'Hooper', 'sex': 'Male', 'email': 'zjohnston@example.com', 'phone_number': '+1-939-130-6258', 'hire_date': '2012-11-17', 'job_title': 'Counselling psychologist'}
 2026-01-10 19:43:27,898 - INFO - {'index': 5, 'employee_id': '9afFEafAe1CBBB9', 'first_name': 'Lindsey', 'last_name': 'Rice', 'sex': 'Female', 'email': 'elin@example.net', 'phone_number': '(390)417-1635x3010', 'hire_date': '1923-04-15', 'job_title': 'Biomedical engineer'}
+2026-01-12 16:44:42,966 - INFO - Attempt 1 downloading CSV file...
+2026-01-12 16:44:42,970 - INFO - Download successful: employee_data.csv
+2026-01-12 16:44:43,132 - INFO - CSV Columns after mapping: ['employee_id', 'First Name', 'Last Name', 'Email', 'hire_date']
+2026-01-12 16:44:51,753 - INFO - Attempt 1 downloading CSV file...
+2026-01-12 16:44:53,997 - INFO - Download successful: employee_data.csv
+2026-01-12 16:44:54,350 - INFO - CSV Columns after mapping: ['index', 'Employee ID', 'First Name', 'Last Name', 'sex', 'Email', 'Phone Number', 'Hire Date', 'Job Title']
+2026-01-12 16:44:54,470 - INFO - Valid records: 1000
+2026-01-12 16:44:54,471 - INFO - Invalid records: 0
+2026-01-12 16:44:54,471 - INFO - CSV Columns: ['index', 'employee_id', 'first_name', 'last_name', 'sex', 'email', 'phone_number', 'hire_date', 'job_title']
+2026-01-12 16:44:54,472 - INFO - Sample valid records:
+2026-01-12 16:44:54,472 - INFO - {'index': 1, 'employee_id': '8717bbf45cCDbEe', 'first_name': 'Shelia', 'last_name': 'Mahoney', 'sex': 'Male', 'email': 'pwarner@example.org', 'phone_number': '857.139.8239', 'hire_date': '2014-01-27', 'job_title': 'Probation officer'}
+2026-01-12 16:44:54,472 - INFO - {'index': 2, 'employee_id': '3d5AD30A4cD38ed', 'first_name': 'Jo', 'last_name': 'Rivers', 'sex': 'Female', 'email': 'fergusonkatherine@example.net', 'phone_number': '+1-950-759-8687', 'hire_date': '1931-07-26', 'job_title': 'Dancer'}
+2026-01-12 16:44:54,473 - INFO - {'index': 3, 'employee_id': '810Ce0F276Badec', 'first_name': 'Sheryl', 'last_name': 'Lowery', 'sex': 'Female', 'email': 'fhoward@example.org', 'phone_number': '(599)782-0605', 'hire_date': '2013-11-25', 'job_title': 'Copy'}
+2026-01-12 16:44:54,474 - INFO - {'index': 4, 'employee_id': 'BF2a889C00f0cE1', 'first_name': 'Whitney', 'last_name': 'Hooper', 'sex': 'Male', 'email': 'zjohnston@example.com', 'phone_number': '+1-939-130-6258', 'hire_date': '2012-11-17', 'job_title': 'Counselling psychologist'}
+2026-01-12 16:44:54,474 - INFO - {'index': 5, 'employee_id': '9afFEafAe1CBBB9', 'first_name': 'Lindsey', 'last_name': 'Rice', 'sex': 'Female', 'email': 'elin@example.net', 'phone_number': '(390)417-1635x3010', 'hire_date': '1923-04-15', 'job_title': 'Biomedical engineer'}
+2026-01-12 17:26:14,502 - INFO - CSV Columns after mapping: ['index', 'Employee ID', 'First Name', 'Last Name', 'sex', 'Email', 'Phone Number', 'Hire Date', 'Job Title']
+2026-01-12 17:26:15,137 - INFO - Attempt 1 downloading CSV file...
+2026-01-12 17:26:15,139 - INFO - Download successful: employee_data.csv
+2026-01-12 17:26:15,160 - INFO - CSV Columns after mapping: ['employee_id', 'First Name', 'Last Name', 'Email', 'hire_date']
+2026-01-12 19:07:03,534 - INFO - Attempt 1 downloading CSV file...
+2026-01-12 19:07:03,555 - INFO - Download successful: employee_data.csv
+2026-01-12 19:07:03,592 - INFO - CSV Columns after mapping: ['employee_id', 'First Name', 'Last Name', 'Email', 'hire_date']
+2026-01-12 19:08:13,778 - INFO - CSV Columns after mapping: ['index', 'Employee ID', 'First Name', 'Last Name', 'sex', 'Email', 'Phone Number', 'Hire Date', 'Job Title']
+2026-01-12 19:08:13,784 - INFO - Attempt 1 downloading CSV file...
+2026-01-12 19:08:13,785 - INFO - Download successful: employee_data.csv
+2026-01-12 19:08:13,795 - INFO - CSV Columns after mapping: ['employee_id', 'First Name', 'Last Name', 'Email', 'hire_date']
+2026-01-12 19:08:29,906 - INFO - Attempt 1 downloading CSV file...
+2026-01-12 19:08:32,017 - INFO - Download successful: employee_data.csv
+2026-01-12 19:08:32,114 - INFO - CSV Columns after mapping: ['index', 'Employee ID', 'First Name', 'Last Name', 'sex', 'Email', 'Phone Number', 'Hire Date', 'Job Title']
+2026-01-12 19:08:32,193 - INFO - Valid records: 1000
+2026-01-12 19:08:32,194 - INFO - Invalid records: 0
+2026-01-12 19:08:32,194 - INFO - CSV Columns: ['index', 'employee_id', 'first_name', 'last_name', 'sex', 'email', 'phone_number', 'hire_date', 'job_title']
+2026-01-12 19:08:32,194 - INFO - Sample valid records:
+2026-01-12 19:08:32,194 - INFO - {'index': 1, 'employee_id': '8717bbf45cCDbEe', 'first_name': 'Shelia', 'last_name': 'Mahoney', 'sex': 'Male', 'email': 'pwarner@example.org', 'phone_number': '857.139.8239', 'hire_date': '2014-01-27', 'job_title': 'Probation officer'}
+2026-01-12 19:08:32,195 - INFO - {'index': 2, 'employee_id': '3d5AD30A4cD38ed', 'first_name': 'Jo', 'last_name': 'Rivers', 'sex': 'Female', 'email': 'fergusonkatherine@example.net', 'phone_number': '+1-950-759-8687', 'hire_date': '1931-07-26', 'job_title': 'Dancer'}
+2026-01-12 19:08:32,195 - INFO - {'index': 3, 'employee_id': '810Ce0F276Badec', 'first_name': 'Sheryl', 'last_name': 'Lowery', 'sex': 'Female', 'email': 'fhoward@example.org', 'phone_number': '(599)782-0605', 'hire_date': '2013-11-25', 'job_title': 'Copy'}
+2026-01-12 19:08:32,195 - INFO - {'index': 4, 'employee_id': 'BF2a889C00f0cE1', 'first_name': 'Whitney', 'last_name': 'Hooper', 'sex': 'Male', 'email': 'zjohnston@example.com', 'phone_number': '+1-939-130-6258', 'hire_date': '2012-11-17', 'job_title': 'Counselling psychologist'}
+2026-01-12 19:08:32,197 - INFO - {'index': 5, 'employee_id': '9afFEafAe1CBBB9', 'first_name': 'Lindsey', 'last_name': 'Rice', 'sex': 'Female', 'email': 'elin@example.net', 'phone_number': '(390)417-1635x3010', 'hire_date': '1923-04-15', 'job_title': 'Biomedical engineer'}
+2026-01-12 19:08:39,823 - INFO - CSV Columns after mapping: ['index', 'Employee ID', 'First Name', 'Last Name', 'sex', 'Email', 'Phone Number', 'Hire Date', 'Job Title']
+2026-01-12 19:08:39,827 - INFO - Attempt 1 downloading CSV file...
+2026-01-12 19:08:39,829 - INFO - Download successful: employee_data.csv
+2026-01-12 19:08:39,838 - INFO - CSV Columns after mapping: ['employee_id', 'First Name', 'Last Name', 'Email', 'hire_date']
