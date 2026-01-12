@@ -28,7 +28,7 @@ def validate_record(record: dict):
         "first_name",
         "last_name",
         "email",
-        "hire_date",
+        "date_of_birth",
     ]
 
     for field in required_fields:

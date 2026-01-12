@@ -51,7 +51,7 @@ def parse_file(file_path: str) -> pd.DataFrame:
         "last_name": "Last Name",
         "email": "Email",
         "phone": "Phone Number",
-        "date_of_birth": "Hire Date",
+        "date_of_birth": "Date of Birth",
         "job_title": "Job Title",
     }
 

@@ -4,7 +4,7 @@ from scraper import parse_file
 def test_csv_parsing(tmp_path):
     csv_file = tmp_path / "employees.csv"
     csv_file.write_text(
-        "Employee ID,First Name,Last Name,Email,Hire Date\n"
+        "Employee ID,First Name,Last Name,Email,Date of birth\n"
         "1,John,Doe,john@example.com,2020-01-01"
     )
 

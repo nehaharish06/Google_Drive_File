@@ -7,7 +7,7 @@ def test_validate_data_structure(tmp_path):
     """
 
     csv_content = """index,user_id,first_name,last_name,sex,email,phone,date_of_birth,job_title
-1,EMP001,Jane,Doe,Female,jane@example.com,9876543210,2021-05-10,Developer
+1,EMP001,Jane,Doe,Female,jane@example.com,9876543210,1976-05-10,Developer
 """
 
     csv_file = tmp_path / "employee_data.csv"
@@ -23,7 +23,7 @@ def test_validate_data_structure(tmp_path):
         "sex",
         "Email",
         "Phone Number",
-        "Hire Date",
+        "Date of Birth",
         "Job Title",
     }
 

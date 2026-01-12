@@ -7,7 +7,7 @@ def test_file_download_success(mock_get):
     mock_response = Mock()
     mock_response.status_code = 200
     mock_response.content = (
-        b"Employee ID,First Name,Last Name,Email,Job Title,Phone Number,Hire Date\n"
+        b"Employee ID,First Name,Last Name,Email,Job Title,Phone Number,Date of birth\n"
         b"1,John,Doe,john@example.com,Engineer,9999999999,2022-01-01\n"
         b"2,Jane,Smith,jane@example.com,Manager,8888888888,2021-06-15\n"
     )
