@@ -27,7 +27,7 @@ def test_validate_data_structure(tmp_path):
         "Job Title",
     }
 
-    # Validate mapped structure (parse stage)
+    # Validate mapped structure 
     assert set(df.columns) == expected_columns
 
     # Data accessibility checks

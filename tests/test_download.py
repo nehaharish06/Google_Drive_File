@@ -2,7 +2,7 @@ from unittest.mock import patch, Mock
 from scraper import download_file
 import os
 
-@patch("scraper.requests.get")  # IMPORTANT: patch where it's USED
+@patch("scraper.requests.get") 
 def test_file_download_success(mock_get):
     mock_response = Mock()
     mock_response.status_code = 200

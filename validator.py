@@ -39,6 +39,4 @@ def validate_record(record: dict):
     if "email" in normalized and "@" not in str(normalized["email"]):
         errors.append("invalid email")
 
-    return errors
-
-    
+    return errors 
