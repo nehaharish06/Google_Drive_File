@@ -3,28 +3,40 @@ from datetime import datetime
 
 EMAIL_REGEX = r"[^@]+@[^@]+\.[^@]+"
 
-REQUIRED_FIELDS = [
-    "Employee ID",
-    "First Name",
-    "Last Name",
-    "Email",
-    "Hire Date"
-]
+def validate_row(row):
+    return (
+        row["user_id"]
+        and row["first_name"]
+        and row["last_name"]
+        and "@" in row["email"]
+        and row["phone"].isdigit()
+    )
 
-def validate_record(record: dict) -> list:
+
+# validator.py
+def validate_record(record: dict):
     errors = []
 
-    for field in REQUIRED_FIELDS:
-        if not record.get(field):
-            errors.append(f"Missing field: {field}")
+    # Normalize keys
+    normalized = {
+        k.strip().lower().replace(" ", "_"): v
+        for k, v in record.items()
+    }
 
-    if record.get("Email") and not re.match(EMAIL_REGEX, record["Email"]):
-        errors.append("Invalid email format")
+    required_fields = [
+        "employee_id",
+        "first_name",
+        "last_name",
+        "email",
+        "date_of_birth",
+    ]
 
-    if record.get("Hire Date"):
-        try:
-            datetime.strptime(record["Hire Date"], "%Y-%m-%d")
-        except ValueError:
-            errors.append("Invalid hire date format")
+    for field in required_fields:
+        if field not in normalized or not normalized[field]:
+            errors.append(f"{field} is missing")
 
-    return errors
+    # Simple email check
+    if "email" in normalized and "@" not in str(normalized["email"]):
+        errors.append("invalid email")
+
+    return errors 

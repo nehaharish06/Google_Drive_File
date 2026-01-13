@@ -6,7 +6,7 @@ def test_valid_record():
         "First Name": "Jane",
         "Last Name": "Doe",
         "Email": "jane@example.com",
-        "Hire Date": "2021-05-10"
+        "Date of Birth": "1976-05-10"
     }
 
     errors = validate_record(record)
@@ -18,7 +18,7 @@ def test_invalid_record():
         "First Name": "Jane",
         "Last Name": "",
         "Email": "invalid-email",
-        "Hire Date": "10-05-2021"
+        "Date of Birth": "10-05-1976"
     }
 
     errors = validate_record(record)

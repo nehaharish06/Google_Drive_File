@@ -1,8 +1,22 @@
+# logger.py
 import logging
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
-)
+logger = logging.getLogger("employee_scraper")
+logger.setLevel(logging.INFO)
 
-logger = logging.getLogger(__name__)
+# Console handler
+ch = logging.StreamHandler()
+ch.setLevel(logging.INFO)
+
+# File handler
+fh = logging.FileHandler("scraper.log")
+fh.setLevel(logging.INFO)
+
+# Formatter
+formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+ch.setFormatter(formatter)
+fh.setFormatter(formatter)
+
+# Add handlers
+logger.addHandler(ch)
+logger.addHandler(fh)
